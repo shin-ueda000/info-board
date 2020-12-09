@@ -13,6 +13,7 @@
       <div class="inner">
         <div class="nav">
           <div class="nav__left">
+            <h1>InfoBoard</h1>
           </div>
           <% if user_signed_in? %>
              <div class="nav__right">
@@ -30,5 +31,8 @@
       </div>
     </header>
     <%= yield %>
+    <footer class="footer">
+      <p class="copyright">Copyright © PROTO SPACE All rights reserved.</p>
+    </footer>
   </body>
 </html>

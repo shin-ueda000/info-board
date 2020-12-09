@@ -1,0 +1,20 @@
+<div class="contents">
+      <div class="first-view">
+        <%= image_tag "info.png", class: "top-image"%> 
+      </div>
+      <div class="upper-content">
+        <h2 class="heading-name">service</h2>
+        <div class="message-date">
+          情報商材＝詐欺と思っている人もいれば情報商材＝稼げると期待する人もいます。
+          果たして情報商材は「詐欺」なのか「稼げる」のかどっちなんでしょう？
+          答えはずばり！どっちも正解です。
+          <br>情報商材には「良い物」も「悪い物」も存在します。<br>自分の目的にあった、本当に良い物だけを手にできるように少しでもお手伝いが出来たらと思いこのサイトを立ち上げました
+        </div>       
+      </div>
+      <div class="middle-content">
+        <h2 class="heading-name">投稿一覧</h2>
+        <% @info.each do |info| %>
+          <%= render partial: "info", locals: { info: info } %>
+        <% end %>
+      </div>
+    </div>

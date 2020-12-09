@@ -15,9 +15,7 @@
   display: flex;
   justify-content: space-between;
 }
-.logo {
-  width: 200px;
-}
+
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -44,4 +42,15 @@
 }
 .nav__logout:hover{
   opacity: 0.5;
+}
+
+/* フッター */
+.footer {
+  background-color: #999;
+  padding: 10px 0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
 }
