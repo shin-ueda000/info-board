@@ -1,0 +1,17 @@
+.inner {
+  width: 1024px;
+  margin: 0 auto;  
+}
+.form__wrapper{
+  min-height: calc(100vh - 161px);
+}
+.page-heading {
+  font-size: 30px;
+  margin-bottom: 28px;
+}
+.field{
+  margin: 10px 0;
+}
+.form__text {
+  width: 50%;
+}
