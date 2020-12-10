@@ -1,0 +1,23 @@
+<main class="main">
+  <div class="inner">
+    <div class="info__wrapper">
+      <% if user_signed_in? && current_user.id == @info.user.id%>
+        <div class="prototype__manage">
+          <%= link_to "編集する", edit_info_path, class: :prototype__btn %>
+          <%= link_to "削除する", info_path, method: :delete, class: :prototype__btn %>
+        </div>
+      <% end %>
+      <div class="info-title">
+        <p>商材名</p>
+        <p><%= @info.title%></p>
+      </div>
+      <div class="info-img">
+        <%= image_tag @info.image.variant(resize: '500x500'), class: 'message-image' if @info.image.attached? %>
+      </div>
+      <div class=info-content>
+        <p>内容</p>
+        <p><%= @info.content%></p>
+      </div>
+    </div>
+  </div>
+</main>

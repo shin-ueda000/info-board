@@ -18,6 +18,31 @@ class InfosController < ApplicationController
     end
   end
 
+  def show
+    @info = Info.find(params[:id])
+  end
+
+  def edit
+    @info = Info.find(params[:id])
+    unless current_user.id == @info.user_id
+      redirect_to action: :index
+    end
+  end
+
+  def update
+    @info = Info.find(params[:id])
+    if @info.update(info_params)
+      redirect_to info_path 
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    info = Info.find(params[:id])
+    info.destroy
+    redirect_to root_path
+  end
 
 
   private

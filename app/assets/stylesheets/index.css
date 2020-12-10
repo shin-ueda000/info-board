@@ -121,3 +121,7 @@ p {
 .info-content {
   border: 1px solid #000000
 }
+.message-image {
+  width: 100%;
+  object-fit: cover;
+}
