@@ -1,4 +1,4 @@
-contents {
+.contents {
   background-color: white;
 }
 
@@ -44,7 +44,6 @@ contents {
 
 /* スタイリスト紹介 */
 .middle-content{
-  height: 450px;
   margin: 0 160px;
 }
 .stylist-list {
@@ -97,4 +96,28 @@ contents {
   background-color: lightblue;
   color:white;
   display: block;
+}
+
+p {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.post-content {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #000000
+}
+.info-title {
+  border: 1px solid #000000
+}
+.info-content {
+  border: 1px solid #000000
 }

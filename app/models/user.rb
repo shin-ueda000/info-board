@@ -8,4 +8,6 @@ class User < ApplicationRecord
           validates :nickname
           validates :password, format:    { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i, message: "please include both letters and numbers in."}
           end
+  
+  has_many :infos
 end
