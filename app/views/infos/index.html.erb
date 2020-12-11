@@ -24,9 +24,15 @@
               <p>内容</p>
               <p><%= info.content %></p>
             </div>
+            <%if info.image.attached?%>
             <div class=info-img>
-              <%= image_tag info.image, class: 'message-image' if info.image.attached? %>
+              <%= image_tag info.image, class: 'message-image'  %>
             </div>
+            <%else%>
+            <div class=info-img>
+              <%= image_tag "unnamed.png", class: "message-image"%> 
+            </div>
+            <%end%>
           </div>
         <%end%>
       </div>
