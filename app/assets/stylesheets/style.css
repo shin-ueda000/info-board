@@ -1,26 +1,29 @@
 /* ヘッダー */
 
 .header {
-  background-color: #f1f8fe;
+  background-color: #000000;
   margin-bottom: 48px;
   padding: 20px 0;
-
-}
-.inner {
-  width: 1024px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 .nav {
-  width: 100%;
+  width: 700px;
   display: flex;
   justify-content: space-between;
+  margin-right: 30px;
+}
+
+.title {
+  color: #ffff;
+  font-size: 80px;
 }
 
 .nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
-  font-size: 0.8em;
-  color: #87CEFA;
+  font-size: 20px;
+  color: #fff;
   text-decoration: none;
   user-select: none;
   border: 1px #87CEFA solid;
@@ -36,12 +39,16 @@
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
-  color: #87CEFA;
+  color: #fff;
   text-decoration: none;
   user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
 }
 .nav__logout:hover{
-  opacity: 0.5;
+  color: #fff;
+  background: #87CEFA
 }
 
 /* フッター */
@@ -53,4 +60,9 @@
   text-align: center;
   color: #fff;
   font-size: 10px;
+}
+
+h1 {
+  width: 50%;
+  margin-left: 50px;
 }

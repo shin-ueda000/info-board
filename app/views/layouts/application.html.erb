@@ -10,24 +10,17 @@
 
   <body>
     <header class="header">
-      <div class="inner">
+        <h1 class="title">InfoBoard</h1>
         <div class="nav">
-          <div class="nav__left">
-            <h1><a href="/">InfoBoard</a></h1>
-          </div>
+            <%= link_to "ホーム",root_path, class: :nav__btn %>
           <% if user_signed_in? %>
-             <div class="nav__right">
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__logout %>
-              <%= link_to "投稿",new_info_path , class: :nav__btn %>
-             </div>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
+            <%= link_to "投稿",new_info_path , class: :nav__btn %>
           <% else %> 
-            <div class="nav__right">
-              <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
-              <%= link_to "新規登録",  new_user_registration_path, class: :nav__btn %>
-            </div>
+            <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
+            <%= link_to "新規登録",  new_user_registration_path, class: :nav__btn %>
           <% end %>
         </div>
-      </div>
     </header>
     <%= yield %>
     <footer class="footer">

@@ -11,9 +11,8 @@
   width: 100%;
 }
 
-/* 新着情報 */
 .upper-content{
-  height: 450px;
+  height: 300px;
   margin: 0 160px;
 }
 
@@ -42,7 +41,6 @@
   padding-right: 40px;
 }
 
-/* スタイリスト紹介 */
 .middle-content{
   margin: 0 160px;
 }
