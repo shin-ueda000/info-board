@@ -1,3 +1,45 @@
 .info__wrapper{
   min-height: calc(100vh - 161px);
 }
+.info__manage {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+.nave__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 30px;
+}
+.nave__btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+.post-form {
+  
+}
+.info-inner {
+  margin: 0 160px;
+}
+.post-image {
+  width: 100%;
+}
+.message-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: gray;
+}
+
+.message {
+  width: 40vw;
+  background-color: #fff;
+  margin: 5vh 0;
+}

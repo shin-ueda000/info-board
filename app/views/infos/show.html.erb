@@ -1,12 +1,13 @@
 <main class="main">
-  <div class="inner">
-    <div class="info__wrapper">
-      <% if user_signed_in? && current_user.id == @info.user.id%>
-        <div class="prototype__manage">
-          <%= link_to "編集する", edit_info_path, class: :prototype__btn %>
-          <%= link_to "削除する", info_path, method: :delete, class: :prototype__btn %>
-        </div>
-      <% end %>
+  <div class="info__wrapper">
+    <% if user_signed_in? && current_user.id == @info.user.id%>
+      <div class="info__manage">
+        <%= link_to "編集する", edit_info_path, class: :nave__btn %>
+        <%= link_to "削除する", info_path, method: :delete, class: :nave__btn %>
+      </div>
+    <% end %>
+  <div class="post-form">
+    <div class="info-inner">
       <div class="info-title">
         <p>商材名</p>
         <p><%= @info.title%></p>
@@ -17,7 +18,7 @@
       </div>
       <%if @info.image.attached?%>
       <div class=info-img>
-        <%= image_tag @info.image, class: 'post-image'  %>
+        <%= image_tag @info.image, class: "post-image" %>
       </div>
       <%else%>
       <div class=info-img>
@@ -26,4 +27,10 @@
       <%end%>
     </div>
   </div>
+  <div class="message-content">
+    <div class="message">
+      
+    </div>
+  </div>
+</div>
 </main>

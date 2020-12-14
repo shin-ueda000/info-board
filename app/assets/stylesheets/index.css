@@ -18,7 +18,7 @@
 
 .heading-name {
   text-align: center;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #00ff;
   width: 200px;
   margin: 40px auto;
   font-size: 50px;
@@ -96,31 +96,44 @@
   display: block;
 }
 
-p {
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-
 .post {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-.post-content {
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 50px;
-  border: 1px solid #000000
+.post-contents { 
+  border: 1px solid #000000;
 }
 .info-title {
-  border: 1px solid #000000
+  height: 30%;
+  border: 1px solid #000000;
 }
 .info-content {
-  border: 1px solid #000000
+  height: 70%;
+  border: 1px solid #000000;
 }
 .message-image {
-  width: 100%;
+  width: 300px;
   object-fit: cover;
-  height: 200px;
+  height: 100%;
+}
+.right-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} 
+.main-contents {
+  display: flex;
+  height: 300px;
+  margin-bottom: 30px;
+}
+.right-content p {
+  overflow: scroll;
+  height: 100%;
+} 
+.right-content {
+  height: 90%;
+}
+.right-title {
+  border-bottom: 1px solid #000000;
+  height: 10%;
 }
