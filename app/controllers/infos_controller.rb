@@ -21,6 +21,8 @@ class InfosController < ApplicationController
 
   def show
     @info = Info.find(params[:id])
+    @comment = Comment.new
+    @comments = @info.comments.includes(:user)
   end
 
   def edit

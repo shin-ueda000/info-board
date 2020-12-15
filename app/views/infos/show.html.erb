@@ -28,8 +28,19 @@
     </div>
   </div>
   <div class="message-content">
+    <h3>コメント</h3>
     <div class="message">
-      
+      <%= form_with(model: [@info, @comment], local: true) do |f|%>
+        <%= f.text_field :text %>
+        <%= f.submit '送信' %>
+      <% end %>
+    </div>
+    <ul class="messages-lists">
+        <% @comments.each do |comment| %>
+          <li class="message-list">
+            <p><%= comment.text %></p>
+          </li>
+        <% end %>
     </div>
   </div>
 </div>

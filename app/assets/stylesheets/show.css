@@ -32,14 +32,13 @@
   width: 100%;
 }
 .message-content {
+  height: 200px;
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
-  background-color: gray;
+  flex-direction: column;
 }
-
-.message {
-  width: 40vw;
-  background-color: #fff;
-  margin: 5vh 0;
+.message-list {
+  list-style-type: square;
+  padding-bottom: 5px;
 }

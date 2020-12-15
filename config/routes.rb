@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'infos/index'
   root to: 'infos#index'
-  resources :infos
+  resources :infos do
+    resources :comments, only: :create
+  end
 end
